@@ -20,5 +20,5 @@ $('.search_icon').click(function(){
 });
 
 $('.m_menu').click(function(){
-    $('.mobile-navigation').toggle('slow');
+    $('.navbar').toggle('slow');
 });
