@@ -362,6 +362,15 @@
    Max Width 536 
 *********************************************************/
 
+@media(max-width: 700px) {
+	.banner {
+		width: 236px;
+	}
+	.right-figure figure {
+		max-width: 262px;
+	}
+}
+
 @media(max-width: 650px) {
 	.gallery .nav {
 		width: 330px;
