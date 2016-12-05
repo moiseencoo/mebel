@@ -111,23 +111,32 @@ body {
 .navbar {
 	min-height: 46px;
 	margin-bottom: -2px;
+	background: #fff;
 }
 
-#navbar {
+.normal-menu {
 	width: 600px;
 	margin: 0 auto;
+}
+
+.normal-menu .navbar-text {
+	display: none;
+}
+
+.navbar-header {
+	display: none;
+}
+
+.fixed-menu {
+	width: 100%;
 }
 
 .navbar .navbar-collapse {
 	text-align: center;
 }
 
-.mobile-navigation {
-	display: none;
-}
-
 .navbar li a {
-	padding: 10px 20px;
+	padding: 10px 19px;
 	font-size: 25px;
 	line-height: 20px;
 	color: #000;
@@ -250,7 +259,7 @@ body {
 
 .dropdown-menu > .container {
 	border-top: 1px solid #c1c1c1;
-	margin-top: -1px;
+	margin-top: -2px;
 	background: #fff;
 }
 
@@ -276,8 +285,7 @@ body {
 	z-index: 100000;
 }
 
-#navigation .dropdown:hover > ul.dropdown-menu,
-#secondary_navigation .dropdown:hover > ul.dropdown-menu {
+#navigation .dropdown:hover > ul.dropdown-menu {
 	opacity: 1;
 	border-top: 1px solid #c1c1c1;
 	transition: all .3s linear;
@@ -287,8 +295,7 @@ body {
 	display: block;
 }
 
-#navigation .dropdown:hover,
-#secondary_navigation .dropdown:hover {
+#navigation .dropdown:hover {
 	margin-top: -2px;
 	border-left: 1px solid #c1c1c1;
 	border-right: 1px solid #c1c1c1;
@@ -297,41 +304,28 @@ body {
 	;
 }
 
-.show {
-	opacity: 1 !important;
-	top: 0 !important;
-}
-
-#secondary_navigation .navbar {
-	width: 100%;
-	background: #fff;
-	opacity: 0;
-	transition: all 0.3s ease-in;
-	top: -150px;
-}
-
-#secondary_navigation .navbar-brand {
+.navbar-brand {
 	padding: 2px 40px;
 }
 
-#secondary_navigation .navbar-brand img {
+.navbar-brand img {
 	height: 40px;
 	margin-top: 3px;
 }
 
-#secondary_navigation .navbar-text {
+.navbar-text {
 	font-size: 28px;
-	margin: 3px 0 3px 65px;
+	margin: 5px 0 3px 65px;
 }
 
-#secondary_navigation .navbar-search {
+.navbar-search {
 	margin-left: 45px;
 	margin-top: 5px;
 	cursor: pointer;
 }
 
-#secondary_navigation .navbar li a {
-	line-height: 25px;
+.fixed-menu > .nav > li > a {
+	line-height: 28px;
 }
 
 
@@ -552,7 +546,7 @@ form.subscribe .form-hdr {
 
 form.subscribe .form-hdr img {
 	padding-top: 25px;
-	padding-left: 25px;
+	padding-left: 35px;
 	padding-right: 15px;
 	display: block;
 	float: left;
@@ -574,11 +568,11 @@ form.subscribe .form-hdr > div {
 form.subscribe .form-hdr > div:before {
 	content: " ";
 	position: absolute;
-	background: url(../img/icons/bracket_left.png) no-repeat;
+	background: url(../img/icons/subscriber_bracket.png) no-repeat;
 	background-size: contain;
-	height: 100%;
-	top: 13px;
-	left: 12px;
+	height: 80%;
+	top: 20px;
+	left: 21px;
 	right: 0;
 	bottom: 0;
 }
@@ -586,11 +580,11 @@ form.subscribe .form-hdr > div:before {
 form.subscribe .form-hdr > div:after {
 	content: " ";
 	position: absolute;
-	background: url(../img/icons/bracket_right.png) no-repeat;
+	background: url(../img/icons/subscriber_bracket-right.png) no-repeat;
 	background-size: contain;
-	height: 100%;
-	top: 13px;
-	left: 230px;
+	height: 80%;
+	top: 20px;
+	left: 228px;
 	right: 0;
 	bottom: 0;
 }
@@ -598,7 +592,7 @@ form.subscribe .form-hdr > div:after {
 form.subscribe input[type="text"],
 form.subscribe input[type="email"] {
 	display: block;
-	width: 80%;
+	width: 85%;
 	padding: 3px 10px;
 	font-family: 'Open Sans';
 	font-weight: 300;
@@ -613,7 +607,7 @@ form.subscribe .sbm_btn {
 	background: #63b645;
 	border: none;
 	display: block;
-	width: 80%;
+	width: 85%;
 	height: 35px;
 	margin: 18px auto;
 }
@@ -653,7 +647,7 @@ figure {
 }
 
 .right-figure figure img {
-	width: 300px;
+	width: 500px;
 }
 
 figcaption {
@@ -737,10 +731,12 @@ figure:hover img {
 .gallery .gallery-item {
 	background: #fff;
 	width: 263px;
-	height: 325px;
+	min-height: 325px;
 	padding: 5px;
 	margin: 10px 0;
 	border: 1px solid #676767;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
 }
 
 .gallery .gallery-item:hover {
@@ -953,7 +949,7 @@ figure:hover img {
 .show_all_gallery p {
 	display: block;
 	position: absolute;
-	margin: -12px auto 0 -75px;
+	margin: -9px auto 0 -75px;
 	width: 150px;
 	height: 33px;
 	text-align: center;
@@ -962,10 +958,10 @@ figure:hover img {
 
 .show_all_gallery p:before {
 	position: absolute;
-	width: 18px;
+	width: 96px;
 	height: 44px;
 	content: '';
-	left: 4px;
+	left: -72px;
 	bottom: 0;
 	background-image: url(../img/icons/bracket_left.png);
 	background-repeat: no-repeat;
@@ -973,10 +969,10 @@ figure:hover img {
 
 .show_all_gallery p:after {
 	position: absolute;
-	width: 18px;
+	width: 96px;
 	height: 44px;
 	content: '';
-	right: 3px;
+	right: -74px;
 	bottom: 0;
 	background-image: url(../img/icons/bracket_right.png);
 	background-repeat: no-repeat;
@@ -1245,6 +1241,16 @@ footer .col-md-6 {
 	font-family: 'Open Sans';
 	font-weight: 300;
 	padding: 5px;
+}
+
+.ft-txt-grey a {
+	color: #272724;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	padding: 5px;
+	text-decoration: none;
 }
 
 .ft-txt-grey span {

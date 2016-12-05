@@ -8,11 +8,11 @@
 	<title>Starter Template for Bootstrap</title>
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
 	<!-- Custom styles for this template -->
 	<link href="css/fonts.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/bootstrap-submenu.css">
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/responsive.css"> </head>
 
@@ -56,104 +56,111 @@
 		</div>
 		<!--/.search_area-->
 		<nav class="navbar" role="navigation">
-			<div class="navbar-header"> </div>
-			<div id="navbar">
-				<ul class="nav navbar-nav">
-					<li><a href="#">О НАС</a></li>
-					<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ПРОДУКЦИЯ <span class="nav-menu-arrow"></span></a>
-						<ul class="dropdown-menu">
-							<div class="container">
-								<li> <a href="#">Прихожая</a>
-									<ul class="submenu">
-										<li><a href="#">Вешалки</a></li>
-										<li><a href="#">Прихожие</a></li>
-										<li><a href="#">Тумбы</a></li>
-										<li><a href="#">Полки для одежды</a></li>
-									</ul>
-								</li>
-								<li> <a href="#">Гостинная</a>
-									<ul class="submenu">
-										<li><a href="#">Журнальные столы</a></li>
-										<li><a href="#">Консольные столы</a></li>
-										<li><a href="#">Шкафы</a></li>
-										<li><a href="#">Стеллажи</a></li>
-										<li><a href="#">Полки</a></li>
-									</ul>
-								</li>
-								<li> <a href="#">Столовая</a>
-									<ul class="submenu">
-										<li><a href="#">Буфеты</a></li>
-										<li><a href="#">Комоды</a></li>
-										<li><a href="#">Обеденные столы</a></li>
-										<li><a href="#">Скамьи</a></li>
-										<li><a href="#">Стулья и табуреты</a></li>
-										<li><a href="#">Кухня</a></li>
-									</ul>
-								</li>
-								<li> <a href="#">Спальня</a>
-									<ul class="submenu">
-										<li><a href="#">Комоды</a></li>
-										<li><a href="#">Тумбы</a></li>
-										<li><a href="#">Шкафы для спальни</a></li>
-									</ul>
-								</li>
-								<li> <a href="#">Кабинет</a>
-									<ul class="submenu">
-										<li><a href="#">Книжные шкафы</a></li>
-										<li><a href="#">Стеллажи</a></li>
-										<li><a href="#">Письменные столы</a></li>
-										<li><a href="#">Стулья</a></li>
-										<li><a href="#">Тумбы</a></li>
-									</ul>
-								</li>
-								<li> <a href="#">Ванная</a>
-									<ul class="submenu">
-										<li><a href="#">Тумбы для ванной</a></li>
-										<li><a href="#">Шкафы пеналы</a></li>
-									</ul>
-								</li>
-							</div>
-						</ul>
-					</li>
-					<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+					<a class="navbar-brand" href="#"> <img alt="Mebel Capital" src="img/logo.png"> </a>
+				</div>
+				<div id="navbar" class="normal-menu">
+					<ul class="nav navbar-nav">
+						<li><a href="#">О НАС</a></li>
+						<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ПРОДУКЦИЯ <span class="nav-menu-arrow"></span></a>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<li> <a href="#">Прихожая</a>
+										<ul class="submenu">
+											<li><a href="#">Вешалки</a></li>
+											<li><a href="#">Прихожие</a></li>
+											<li><a href="#">Тумбы</a></li>
+											<li><a href="#">Полки для одежды</a></li>
+										</ul>
+									</li>
+									<li> <a href="#">Гостинная</a>
+										<ul class="submenu">
+											<li><a href="#">Журнальные столы</a></li>
+											<li><a href="#">Консольные столы</a></li>
+											<li><a href="#">Шкафы</a></li>
+											<li><a href="#">Стеллажи</a></li>
+											<li><a href="#">Полки</a></li>
+										</ul>
+									</li>
+									<li> <a href="#">Столовая</a>
+										<ul class="submenu">
+											<li><a href="#">Буфеты</a></li>
+											<li><a href="#">Комоды</a></li>
+											<li><a href="#">Обеденные столы</a></li>
+											<li><a href="#">Скамьи</a></li>
+											<li><a href="#">Стулья и табуреты</a></li>
+											<li><a href="#">Кухня</a></li>
+										</ul>
+									</li>
+									<li> <a href="#">Спальня</a>
+										<ul class="submenu">
+											<li><a href="#">Комоды</a></li>
+											<li><a href="#">Тумбы</a></li>
+											<li><a href="#">Шкафы для спальни</a></li>
+										</ul>
+									</li>
+									<li> <a href="#">Кабинет</a>
+										<ul class="submenu">
+											<li><a href="#">Книжные шкафы</a></li>
+											<li><a href="#">Стеллажи</a></li>
+											<li><a href="#">Письменные столы</a></li>
+											<li><a href="#">Стулья</a></li>
+											<li><a href="#">Тумбы</a></li>
+										</ul>
+									</li>
+									<li> <a href="#">Ванная</a>
+										<ul class="submenu">
+											<li><a href="#">Тумбы для ванной</a></li>
+											<li><a href="#">Шкафы пеналы</a></li>
+										</ul>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 							МЕБЕЛЬ НА ЗАКАЗ
 							<span class="nav-menu-arrow"></span>
 						</a>
-						<ul class="dropdown-menu">
-							<div class="container">
-								<li> <a href="#">Прихожая</a>
-									<ul class="submenu">
-										<li><a href="#">Вешалки</a></li>
-										<li><a href="#">Прихожие</a></li>
-										<li><a href="#">Тумбы</a></li>
-										<li><a href="#">Полки для одежды</a></li>
-									</ul>
-								</li>
-								<li> <a href="#">Гостинная</a>
-									<ul class="submenu">
-										<li><a href="#">Журнальные столы</a></li>
-										<li><a href="#">Консольные столы</a></li>
-										<li><a href="#">Шкафы</a></li>
-										<li><a href="#">Стеллажи</a></li>
-										<li><a href="#">Полки</a></li>
-									</ul>
-								</li>
-								<li> <a href="#">Гостинная</a>
-									<ul class="submenu">
-										<li><a href="#">Журнальные столы</a></li>
-										<li><a href="#">Консольные столы</a></li>
-										<li><a href="#">Шкафы</a></li>
-										<li><a href="#">Стеллажи</a></li>
-										<li><a href="#">Полки</a></li>
-									</ul>
-								</li>
-							</div>
-						</ul>
-					</li>
-					<li> <a href="#">КОНТАКТЫ</a> </li>
-				</ul>
+							<ul class="dropdown-menu">
+								<div class="container">
+									<li> <a href="#">Прихожая</a>
+										<ul class="submenu">
+											<li><a href="#">Вешалки</a></li>
+											<li><a href="#">Прихожие</a></li>
+											<li><a href="#">Тумбы</a></li>
+											<li><a href="#">Полки для одежды</a></li>
+										</ul>
+									</li>
+									<li> <a href="#">Гостинная</a>
+										<ul class="submenu">
+											<li><a href="#">Журнальные столы</a></li>
+											<li><a href="#">Консольные столы</a></li>
+											<li><a href="#">Шкафы</a></li>
+											<li><a href="#">Стеллажи</a></li>
+											<li><a href="#">Полки</a></li>
+										</ul>
+									</li>
+									<li> <a href="#">Гостинная</a>
+										<ul class="submenu">
+											<li><a href="#">Журнальные столы</a></li>
+											<li><a href="#">Консольные столы</a></li>
+											<li><a href="#">Шкафы</a></li>
+											<li><a href="#">Стеллажи</a></li>
+											<li><a href="#">Полки</a></li>
+										</ul>
+									</li>
+								</div>
+							</ul>
+						</li>
+						<li> <a href="#">КОНТАКТЫ</a> </li>
+						<p class="navbar-text navbar-phone"><img src="img/icons/wapp_icon.png"> &nbsp; 7-495-181-09-69&nbsp; / &nbsp;7-495-181-09-69</p>
+						<p class="navbar-text navbar-search"> <img class="search_icon" src="img/icons/search_icon.png"> <img style="display:none" class="search_icon" src="img/icons/close_icon.png"> </p>
+					</ul>
+				</div>
+				<!--/.navbar-collapse -->
 			</div>
-			<!--/.navbar-collapse -->
 		</nav>
 		<section class="header_bg">
 			<div class="container">
@@ -256,7 +263,7 @@
 		<section class="blocks">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-lg-6 col-md-8">
 						<div class="block1">
 							<p><strong>МЕБЕЛЬ КЭПИТАЛ</strong> — стильная мебель из массива, включая мебель для ванных комнат, сундуки, обеденные и письменные столы, деревянные стулья, кровати с балдахином, прикроватные тумбочки, консольные и кофейные столы, платяные и посудные шкафы, книжные стеллажи, барные столы и стулья, а также двери с резьбой и много другое.</p>
 						</div>
@@ -279,7 +286,7 @@
 						</div>
 					</div>
 					<!--/.col-md-6-->
-					<div class="col-md-6">
+					<div class="col-lg-3 col-md-4">
 						<div class="banner">`
 							<div class="banner-text">
 								<div class="row">
@@ -302,6 +309,8 @@
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="col-lg-3 col-md-12">
 						<div class="right-figure">
 							<figure> <img src="img/content/scale1.png" />
 								<figcaption>
@@ -344,30 +353,28 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item "> <img src="img/content/gallery_img.png">
+									<div class="gallery-item animated  zoomIn"> <img src="img/content/gallery_img.png">
 										<h3>Шкаф для одежды SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/gallery_img.png">
+									<div class="gallery-item animated  zoomIn"> <img src="img/content/gallery_img.png">
 										<h3>Шкаф для одежды SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item box">
-										<div class="cool-hover"> <img src="img/content/gallery_img.png">
-											<h3>Шкаф для одежды SEBB</h3>
-											<p class="model">KEN-DK-4634-456</p>
-											<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
-										</div>
+									<div class="gallery-item animated  zoomIn"> <img src="img/content/gallery_img.png">
+										<h3>Шкаф для одежды SEBB</h3>
+										<p class="model">KEN-DK-4634-456</p>
+										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/gallery_img.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/gallery_img.png">
 										<h3>Шкаф для одежды SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
@@ -384,28 +391,28 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/scale1.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/scale1.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/scale1.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/scale1.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
@@ -421,28 +428,28 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/gallery_img.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/gallery_img.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/gallery_img.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/gallery_img.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/gallery_img.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/gallery_img.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/gallery_img.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/gallery_img.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
@@ -454,38 +461,39 @@
 					<!--/.gallery-container-->
 				</div>
 				<div role="tabpanel" class="tab-pane" id="bed-room">
-					<div class="gallery-container">
+					<div class="gallery-container ">
 						<div class="container">
 							<div class="row">
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
-										<h3>Стол SEBB</h3>
+									<div class="gallery-item animated  zoomIn"> <img src="img/content/gallery_img.png">
+										<h3>Шкаф для одежды SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
-										<h3>Стол SEBB</h3>
+									<div class="gallery-item animated  zoomIn"> <img src="img/content/gallery_img.png">
+										<h3>Шкаф для одежды SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
-										<h3>Стол SEBB</h3>
+									<div class="gallery-item animated  zoomIn"> <img src="img/content/gallery_img.png">
+										<h3>Шкаф для одежды SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
-										<h3>Стол SEBB</h3>
+									<div class="gallery-item animated  zoomIn"> <img src="img/content/gallery_img.png">
+										<h3>Шкаф для одежды SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 							</div>
+							<!--/.row-->
 						</div>
 					</div>
 					<!--/.gallery-container-->
@@ -495,28 +503,28 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/gallery_img.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/scale1.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/gallery_img.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/scale1.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/gallery_img.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/scale1.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/gallery_img.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/scale1.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
@@ -532,28 +540,28 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/gallery_img.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/gallery_img.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/gallery_img.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 full-width">
-									<div class="gallery-item"> <img src="img/content/scale1.png">
+									<div class="gallery-item animated zoomIn"> <img src="img/content/gallery_img.png">
 										<h3>Стол SEBB</h3>
 										<p class="model">KEN-DK-4634-456</p>
 										<p class="price">83 000<span class="icon-ruble"></span> <a href="#"><span class="flaticon-commerce"></span>&nbsp; В Корзину</a> </p>
@@ -712,8 +720,9 @@
 					<div class="col-md-2 col-sm-12 col-xs-12">
 						<div class="copyright">
 							<a href="index.html"><img src="img/logo.png" alt="Mebel Capital"></a>
-							<p class="ft-txt-grey"> ООО "Мебель кэпитал" &copy;2016 Мебель с индивидуальным подходом </p>
-							<p class="ft-txt-grey"> <span>Создание сайта</span> - Компания "Веб Пульт" </p>
+							<p class="ft-txt-grey"> ООО "Мебель кэпитал" &copy;2016
+								<br> Мебель с индивидуальным подходом </p>
+							<p class="ft-txt-grey"> <a href="#"><span>Создание сайта</span> - <br>Компания "Веб Пульт"</a></p>
 						</div>
 					</div>
 				</div>
