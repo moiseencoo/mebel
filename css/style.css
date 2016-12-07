@@ -72,7 +72,7 @@ body {
 
 .header .search_icon {
 	float: right;
-	margin-top: 27px;
+	margin-top: 25px;
 	cursor: pointer;
 }
 
@@ -80,7 +80,8 @@ body {
 	position: relative;
 }
 
-.search_area .search_form {
+#mobile_searchh,
+#desctop_search {
 	display: none;
 }
 
@@ -99,10 +100,18 @@ body {
 	transform: translateX(-50%);
 }
 
+.onTop {
+	top: -40px;
+}
+
 
 /************************************************************
                          Navigation
 ************************************************************/
+
+.showDropDownMenu {
+	display: block;
+}
 
 .navbar > li a {
 	padding-right: 50px;
@@ -115,7 +124,7 @@ body {
 }
 
 .normal-menu {
-	width: 600px;
+	width: 550px;
 	margin: 0 auto;
 }
 
@@ -136,7 +145,7 @@ body {
 }
 
 .navbar li a {
-	padding: 10px 19px;
+	padding: 10px 18px;
 	font-size: 25px;
 	line-height: 20px;
 	color: #000;
@@ -154,6 +163,7 @@ body {
 
 .navbar-nav {
 	margin-top: -1px;
+	margin-left: 10px;
 }
 
 .nav-menu-arrow {
@@ -328,6 +338,10 @@ body {
 	line-height: 28px;
 }
 
+.show_mobile_menu {
+	display: none;
+}
+
 
 /************************************************************
                          Header BG
@@ -349,7 +363,7 @@ body {
 }
 
 .evaluation {
-	margin-top: 27%;
+	margin-top: 300px;
 }
 
 .evaluation img {
@@ -476,11 +490,12 @@ body {
 ************************************************************/
 
 .blocks {
-	margin: 50px 0;
+	margin: 50px 0 65px 0;
 }
 
 .blocks .block1 {
 	background: #fff url(../img/block_bg.png);
+	margin-bottom: 10px;
 }
 
 .blocks .block1 p {
@@ -488,6 +503,7 @@ body {
 	font-size: 15px;
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-weight: 600;
+	margin: 0;
 }
 
 .banner {
@@ -683,15 +699,16 @@ figcaption .small a {
 }
 
 .right-figure figcaption div {
-	background-size: 100%;
 	background: url(../img/right-figure_link.png) no-repeat center center;
+	background-size: 62%;
 	table-layout: center;
 }
 
 figcaption .smaller a {
 	padding: 30px 2px;
-	-webkit-background-size: 100%;
 	background: none;
+	font-size: 26px;
+	line-height: 1;
 }
 
 figcaption div a:hover,
@@ -1067,7 +1084,7 @@ figure:hover img {
 }
 
 .carousel-indicators {
-	top: 90%;
+	top: 91%;
 }
 
 .carousel-indicators li {
@@ -1136,7 +1153,7 @@ footer .col-md-6 {
 	float: left;
 	display: inline;
 	padding: 0 0 10px 10px;
-	margin-top: 20px;
+	margin-top: 15px;
 	-webkit-column-count: 3;
 	-moz-column-count: 3;
 	column-count: 3;
